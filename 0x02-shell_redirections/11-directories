@@ -1,0 +1,2 @@
+#!/bin/bash
+find path/to/0x02-shell_redirections -type d -not -path "/path/to/0x02-shell_redirections/exclude_0x02-shell_redirection" | wc -l

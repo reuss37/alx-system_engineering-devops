@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$WATER$STIR" | tr 'waterstir.' '0123456789' | bc | tr -d '\\' | tr -d '\n' | tr '01234567' 'bestchol' && echo
+tr -d '\n' <<< $(tr 'waterstir.' '0123456789' <<< "$WATER$STIR") | tr '01234567' 'bestchol'
